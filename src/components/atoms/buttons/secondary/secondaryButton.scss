@@ -1,0 +1,59 @@
+
+.buttonsec {
+  border-radius: 2rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-size: 0.875rem; 
+  font-weight: bold;
+  text-align: center;
+  color: $primary-brown; 
+  border: 0.0625rem solid $primary-brown; 
+  background-color: $neutral-white; 
+
+  img {
+    margin-left: 0.2rem; 
+  }
+
+  @include xs {
+    width: 130px; 
+    height: 49px;
+  }
+
+  @include sm {
+    width: 130px; 
+    height: 49px;
+  }
+
+  @include md {
+    width: 136px; 
+    height: 40px;
+  }
+
+  @include xl {
+    width: 150px; 
+    height: 49px;
+  }
+
+  @include xxl {
+    width: 165px;
+    height: 49px;
+
+    &:hover {
+      background-color: $primary-brown; 
+      color: $neutral-white; 
+      border: 0;
+    }
+  }  
+
+  @include xxxl {
+    width: 176px;
+    height: 49px;
+    &:hover {
+      background-color: $primary-brown; 
+      color: $neutral-white; 
+      border: 0;
+    }
+  }  
+}

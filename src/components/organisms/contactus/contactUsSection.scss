@@ -1,0 +1,30 @@
+.contact-us-section {
+  background-color: white;
+
+  .contact-title {
+    color: $secondary-dark-brown;
+
+    .highlight {
+      color: $primary-brown;
+    }
+  }
+
+  .contact-description {
+    color: $neutral-black;
+  }
+
+  .contact-details {
+    .address,
+    .contact-info {
+      text-align: left;
+
+      .contact {
+        color: $primary-brown;
+      }
+
+      .h4 {
+        color: $neutral-black;
+      }
+    }
+  }
+}

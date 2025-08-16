@@ -1,0 +1,29 @@
+.unfeature-blog-card {
+  background-color: $primary-brown;
+  color: $neutral-white;
+
+  .unfeature-image-placeholder {
+    position: relative;
+    width: 90%;
+    height: 90%; 
+    overflow: hidden;
+    border-radius: 15px; 
+    background-color: $neutral-300;
+    margin-left: 10px;
+    margin-right: 40px;
+    margin-top:7px
+  }
+
+  .unfeature-image-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .unfeature-date {
+    color: $neutral-white;
+  }
+}

@@ -1,0 +1,15 @@
+.contact-us-section {
+  background-color: white;
+  
+  .contact-title {
+    color: $secondary-dark-brown;
+
+    .highlight {
+      color: $primary-brown;
+    }
+  }
+
+  .contact-description {
+    color: $neutral-black;
+  }
+}

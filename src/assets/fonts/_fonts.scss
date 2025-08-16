@@ -1,0 +1,28 @@
+$font-path-poppins-bold: './Poppins-Bold.woff';
+$font-path-poppins-semibold: './Poppins-SemiBold.woff';
+$font-path-inter-semibold: './Inter-SemiBold.woff';
+$font-path-inter-bold: './Inter-Bold.woff';
+
+@font-face {
+  font-family: 'Poppins';
+  src: url($font-path-poppins-bold) format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url($font-path-poppins-semibold) format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url($font-path-inter-semibold) format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url($font-path-inter-bold) format('woff');
+  font-weight: bold;
+}

@@ -1,0 +1,59 @@
+@import '../../../assets/scss/main.scss'; 
+
+.buttonsec {
+  border-radius: 2rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-size: 0.875rem; 
+  font-weight: bold;
+  text-align: center;
+  color: $primary-brown; 
+  border: 0.0625rem solid $primary-brown; 
+  background-color: $neutral-white; 
+
+  img {
+    margin-left: 0.5rem; 
+  }
+
+  @include sm {
+    width: 130px; //170
+    height: 49px;
+
+  }
+
+  @include md {
+    width: 130px; //170
+    height: 49px;
+
+  }
+
+}
+  @include xl {
+    width: 106px; //170
+    height: 31px;
+   
+  }
+
+  @include xxl {
+    width: 150px;
+    height: 49px;
+
+    &:hover {
+      background-color: $primary-brown; 
+      color: $neutral-white; 
+      border: 0;
+    }
+  }  
+
+  
+  @include xxxl {
+    width: 174px;
+    height: 49px;
+    &:hover {
+      background-color: $primary-brown; 
+      color: $neutral-white; 
+      border: 0;
+    }
+  }  

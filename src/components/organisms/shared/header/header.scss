@@ -1,0 +1,64 @@
+.container {
+  .side-drawer {
+    color: $neutral-white;
+    background-color: $primary-brown;
+
+    &.open {
+      right: 0;
+    }
+  }
+
+  .logo {
+    @include xs {
+      width: 65px;
+      height: auto;
+    }
+
+    @include sm {
+      width: 65px;
+      height: auto;
+    }
+
+    @include md {
+      height: auto;
+      width: 96px;
+    }
+
+    @include xl {
+      height: auto;
+      width: 120px;
+    }
+
+    @include xxl {
+      height: auto;
+      width: 120px;
+    }
+
+    @include xxxl {
+      height: auto;
+      width: 163px;
+    }
+  }
+
+  .button {
+    display: none;
+
+    @include md {
+      grid-column: span 2;
+      display: block;
+    }
+  }
+
+  .block {
+    display: flex;
+
+    @include md {
+      display: block;
+    }
+
+    @include xl {
+      display: none;
+
+    }
+  }
+}

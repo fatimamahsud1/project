@@ -1,0 +1,74 @@
+
+.button-tertiary {
+  border-radius: 2rem; 
+  border: 0.0625rem solid $primary-brown; 
+  background-color: transparent;
+  color: $primary-brown; 
+  font-family: 'Poppins'; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+  @include xs {
+    width: 3.0625rem; 
+    height: 3.0625rem; 
+    img {
+      width: 1.1875rem; 
+      height: 1.1875rem;
+    }
+  }
+
+  @include sm {
+    width: 3.0625rem;
+    height: 3.0625rem; 
+    img {
+      width: 1.1875rem; 
+      height: 1.1875rem; 
+    }
+  }
+
+  @include md {
+    width: 2.625rem; 
+    height: 2.625rem; 
+    img {
+      width: 1.0625rem; 
+      height: 1.0625rem; 
+    }
+  }
+
+  @include xl {
+    width: 3.5rem; 
+    height: 3.5rem; 
+    img {
+      width: 1.75rem; 
+      height: 1.75rem; 
+    }
+  }
+
+  @include xxl {
+    width: 3.5rem; 
+    height: 3.5rem; 
+    img {
+      width: 1.75rem; 
+      height: 1.75rem; 
+    }
+  }  
+
+  @include xxxl {
+    width: 3.5rem; 
+    height: 3.5rem; 
+    img {
+      width: 1.75rem; 
+      height: 1.75rem; 
+    }
+  }  
+
+  &.button-hovered {
+    background-color: $primary-brown; 
+    color: $neutral-white; 
+    border: 0;
+  }
+}
+

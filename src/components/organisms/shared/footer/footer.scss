@@ -1,0 +1,202 @@
+.footer {
+  background-color: $neutral-50;
+  color: $primary-brown;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .footer-section {
+      flex: 1;
+      min-width: 100px;
+      margin-bottom: 20px;
+
+      h4 {
+        color: $secondary-dark-brown;
+      }
+
+      ul {
+
+
+        li {
+          a {
+            text-decoration: none;
+            color: $primary-brown;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .footer-social-icons {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+@mixin sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@include sm {
+  .logo {
+    width: 102px;
+    height: 91px;
+  }
+
+  .social-icon {
+    width: 16px;
+    height: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    .footer-section {
+      width: 100%;
+    }
+
+    .footer-social-icons {
+      justify-content: flex-start;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+    }
+  }
+
+  .directionLogo {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@include md {
+  .logo {
+    width: 95px;
+    height: 85px;
+  }
+
+  .social-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .directionLogo {
+    width: 15px;
+    height: 15px;
+  }
+
+  .footer-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 5px;
+
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@include xl {
+  .logo {
+    width: 169px;
+    height: 152px;
+  }
+
+  .social-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .directionLogo {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer-social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+}
+
+@include xxl {
+  .logo {
+    width: 190px;
+    height: 169px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .directionLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@include xxxl {
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+
+    .footer-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .logo {
+    width: 260px;
+    height: 233px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .directionLogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,113 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  @include xs { font-size: 28px; line-height: 30px; }
+  @include sm { font-size: 28px; line-height: 30px; } 
+  @include md { font-size: 36px; line-height: 35px; }
+  @include xl { font-size: 47px; line-height: 46px; } 
+  @include xxl { font-size: 56px; line-height: 50px; }
+  @include xxxl { font-size: 70px; line-height: 66px; } 
+}
+
+h2 {
+  font-weight: bold;
+  @include xs { font-size: 25px; line-height: 33px; }
+  @include sm { font-size: 25px; line-height: 33px; } 
+  @include md { font-size: 25px; line-height: 35px; } 
+  @include xl { font-size: 36px; line-height: 50px; } 
+  @include xxl { font-size: 43px; line-height: 50px; } 
+  @include xxxl { font-size: 55px; line-height: 75px; } 
+}
+
+h3 {
+  font-weight: semibold; 
+  @include xs { font-size: 18px; line-height: 30px; }
+  @include sm { font-size: 18px; line-height: 30px; } 
+  @include md { font-size: 20px; line-height: 30px; } 
+  @include xl { font-size: 28px; line-height: 48px; } 
+  @include xxl { font-size: 32px; line-height: 48px; } 
+  @include xxxl { font-size: 40px; line-height: 150%; } 
+}
+
+h4 {
+  font-weight: bold;
+  @include xs { font-size: 14px; line-height: 18px; }
+  @include sm { font-size: 14px; line-height: 20px; } 
+  @include md { font-size: 15px; line-height: 22px; } 
+  @include xl { font-size: 20px; line-height: 24px; } 
+  @include xxl { font-size: 22px; line-height: 33px; }
+  @include xxxl { font-size: 24px; line-height: 33px; } 
+}
+
+h5 {
+  font-weight: bold;
+  @include xs { font-size: 13px; line-height: 150%; }
+  @include sm { font-size: 13px; line-height: 150%; } 
+  @include md { font-size: 14px; line-height: 150%; } 
+  @include xl { font-size: 16px; line-height: 150%; }
+  @include xxl { font-size: 20px; line-height: 150%; } 
+  @include xxxl { font-size: 20px; line-height: 150%; } 
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  &.body {
+    @include xs { font-size: 14px; line-height: 21px; font-weight: 500; } 
+    @include md { font-size: 13px; line-height: 21px; font-weight: 500; } 
+    @include xl { font-size: 15px; line-height: 23px; font-weight: 500; } 
+    @include xxl { font-size: 18px; line-height: 23px; font-weight: 500; } 
+    @include xxxl { font-size: 24px; line-height: 34px; font-weight: 500; }
+  }
+
+  &.body-medium {
+    @include xs { font-size: 14px; line-height: 21px; font-weight: 400; } 
+    @include xl { font-size: 15px; line-height: 23px; font-weight: 400; } 
+    @include xxl { font-size: 18px; line-height: 23px; font-weight: 400; } 
+    @include xxxl { font-size: 24px; line-height: 34px; font-weight: 400; } 
+  }
+
+  &.body-small {
+    @include xs { font-size: 12px; line-height: 21px; font-weight: 400; } 
+    @include xl { font-size: 14px; line-height: 21px; font-weight: 400; } 
+    @include xxl { font-size: 16px; line-height: 23px; font-weight: 400; }
+    @include xxxl { font-size: 20px; line-height: 34px; font-weight: 400; } 
+  }
+}
+
+.btn-link {
+  font-family: 'Poppins', sans-serif;
+  &.default {
+    @include sm { font-size: 12px; line-height: 24px; font-weight: semi-bold ; } 
+    @include md { font-size: 18px; line-height: 24px; font-weight: semi-bold; } 
+    @include xl { font-size: 20px; line-height: 150%; font-weight: semi-bold; } 
+    @include xxl { font-size: 24px; line-height: 150%; font-weight: semi-bold; } 
+    @include xxxl { font-size: 20px; line-height: 150%; font-weight: semi-bold; } 
+  }
+
+  &.medium {
+    @include sm { font-size: 16px; line-height: 16px; font-weight: bold; } 
+    @include md { font-size: 16px; line-height: 20px; font-weight: bold; } 
+    @include xl { font-size: 16px; line-height: 24px; font-weight: bold; } 
+    @include xxl { font-size: 18px; line-height: 20px; font-weight: bold; } 
+    @include xxxl { font-size: 16px; line-height: 100%; font-weight: bold; } 
+  }
+
+  &.small {
+    @include sm { font-size: 14px; line-height: 16px; font-weight: regular; } 
+    @include md { font-size: 14px; line-height: 16px; font-weight: regular; } 
+    @include xl { font-size: 14px; line-height: 24px; font-weight: regular; } 
+    @include xxl { font-size: 16px; line-height: 140%; font-weight: regular; } 
+    @include xxxl { font-size: 16px; line-height: 100%; font-weight: regular; } 
+  }
+}
+
+.link {
+  font-family: 'Inter', sans-serif;
+    @include xs { font-size: 11px; line-height: 18px; font-weight: 200; }
+    @include sm { font-size: 11px; line-height: 18px; font-weight: 200; }  
+    @include md { font-size: 12px; line-height: 20px; font-weight: 400; } 
+    @include xl { font-size: 20px; line-height: 24px; font-weight: 400; } 
+}

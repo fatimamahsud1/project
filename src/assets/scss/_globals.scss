@@ -1,0 +1,30 @@
+.container {
+    
+    margin: 0 auto; 
+    @include xs {
+        max-width: 86%;
+        margin-left: auto;
+    }
+
+    @include sm {
+        max-width: 86%;
+        margin-left: auto;
+    }
+
+    @include md {
+        max-width: 42.1875rem; 
+        margin-left: auto;
+    }
+
+    @include xl {
+        max-width: 70rem;
+    }
+
+    @include xxl {
+        max-width: 78.25rem; 
+    }
+
+    @include xxxl {
+        max-width: 103.75rem; 
+    }
+}

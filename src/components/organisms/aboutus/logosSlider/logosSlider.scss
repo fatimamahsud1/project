@@ -1,0 +1,17 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(90deg, #F8D29F 0%, #C99146 49%, #F8D29F 100%);
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}

@@ -1,0 +1,47 @@
+.title-color {
+  color: $secondary-dark-brown;
+}
+
+.residences-title {
+  color: $secondary-dark-brown;
+}
+
+.residences-section {
+  .residences-text {
+    text-align: left;
+    width: 100%; 
+  }
+
+  .residence-item {
+    width: 100%; 
+    opacity: 1; 
+    pointer-events: auto; 
+
+
+    @media (max-width: 640px) {
+      opacity: 1 !important;
+      pointer-events: none;
+
+      .residences-image {
+        display: block;
+      }
+
+      .tertiary-button {
+        display: block;
+      }
+    }
+
+    @media (max-width: 1279px) {
+      opacity: 1 !important;
+      pointer-events: none;
+
+      .residences-image {
+        display: block;
+      }
+
+      .tertiary-button {
+        display: block;
+      }
+    }
+  }
+}

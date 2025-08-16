@@ -1,0 +1,65 @@
+.button-container {
+  position: relative;
+  height: 3.0625rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.625rem;
+  background-color: $primary-brown;
+
+  
+  .text-container {
+    background-color: $secondary-dark-brown;
+    color: $neutral-white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .icon-container {
+    background-color: $primary-brown;
+  }
+
+  @include xs {
+    width: 130px;
+    height: 49px;
+  }
+
+  @include sm {
+    width: 130px;
+    height: 49px;
+  }
+
+  @include md {
+    width: 136px;
+    height: 39px;
+  }
+
+  @include xl {
+    width: 150px;
+    height: 49px;
+  }
+
+  @include xxl {
+    width: 165px;
+    height: 49px;
+
+    &:hover .text-container {
+      transform: translateX(-2.5rem);
+      justify-items: flex-end;
+      padding-left: 2.5rem;
+    }
+  }
+
+
+  @include xxxl {
+    width: 176px;
+    height: 49px;
+
+    &:hover .text-container {
+      transform: translateX(-2.5rem);
+      justify-items: flex-end;
+      padding-left: 2.5rem;
+    }
+  }
+}
