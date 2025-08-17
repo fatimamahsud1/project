@@ -42,17 +42,17 @@ const Header = () => {
             </div>
             <div className="w-[100%] flex flex-col items-start justify-between p-4 h-[80%]">
               <ul className="list-none p-0 m-0 flex flex-col items-start w-full text-left pl-6">
-                <Link href='/'>
-                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Home</Typography></li>
-                </Link>
-                <Link href='/residences-and-amenities/#all-residences'>
-                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Residences</Typography></li>
-                </Link>
-                <Link href='/residences-and-amenities/#all-amenities'>
-                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Amenities</Typography></li>
-                </Link>
-                <Link href='/aboutus'>
+                <Link href='#about'>
                 <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">About Us</Typography></li>
+                </Link>
+                <Link href='#admissions'>
+                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Admissions</Typography></li>
+                </Link>
+                <Link href='#services'>
+                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Services</Typography></li>
+                </Link>
+                <Link href='#register'>
+                <li className='my-4 cursor-pointer hover:underline'><Typography tag="h4">Register</Typography></li>
                 </Link>
               </ul>
               <div className="w-full flex justify-center">

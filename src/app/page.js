@@ -56,7 +56,6 @@ infoText="Ready to register? Fill out the form below to complete your registrati
               </section>
 
     </div>
-    <Footer/>
     </div>
     </div>
   );
